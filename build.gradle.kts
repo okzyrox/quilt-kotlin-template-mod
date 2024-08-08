@@ -100,13 +100,13 @@ tasks {
 }
 
 val targetJavaVersion = JavaVersion.toVersion(javaVersion)
-if (JavaVersion.current() < targetJavaVersion) {
-	kotlin.jvmToolchain(javaVersion)
+//if (JavaVersion.current() < targetJavaVersion) {
+kotlin.jvmToolchain(javaVersion)
 
-	java.toolchain {
-		languageVersion.set(JavaLanguageVersion.of(javaVersion))
-	}
+java.toolchain {
+	languageVersion.set(JavaLanguageVersion.of(javaVersion))
 }
+//}
 
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task if it is present.
