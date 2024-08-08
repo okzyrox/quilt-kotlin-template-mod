@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	java
 	`maven-publish`
-
 	alias(libs.plugins.kotlin)
 	alias(libs.plugins.quilt.loom)
 }
@@ -14,7 +13,7 @@ plugins {
 val archives_base_name: String by project
 base.archivesName.set(archives_base_name)
 
-val javaVersion = 17
+val javaVersion = 21
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
@@ -52,7 +51,7 @@ dependencies {
 	modImplementation(libs.qfapi)
 	// modImplementation(libs.bundles.qfapi) // If you wish to use the deprecated Fabric API modules
 
-	modImplementation(libs.qkl)
+	modImplementation(libs.qkl)  // Waiting for: https://github.com/QuiltMC/quilt-kotlin-libraries/pull/98
 }
 
 tasks {

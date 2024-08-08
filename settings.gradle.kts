@@ -13,6 +13,8 @@ pluginManagement {
 		gradlePluginPortal()
 		mavenCentral()
 	}
+	plugins {
+	}
 }
 
 rootProject.name = "quilt-kotlin-template-mod"

@@ -1,12 +1,12 @@
 [versions]
-kotlin = "1.8.22"
+kotlin = "2.0.0"
 
-minecraft = "1.20.1"
-qfapi = "7.0.3+0.83.1-1.20.1"
-qkl = "2.1.0+kt.1.8.22+flk.1.9.4"
-loader = "0.19.1"
-mappings = "1.20.1+build.1"
-loom = "1.2.3"
+minecraft = "1.21"
+qfapi = "11.0.0-alpha.3+0.100.7-1.21"
+qkl = "2.1.0+kt.1.8.22+flk.1.9.4" # https://github.com/QuiltMC/quilt-kotlin-libraries/pull/98
+loader = "0.26.4-beta.1"
+mappings = "1.21+build.12"
+loom = "1.4.2" # Awaiting 1.21
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
